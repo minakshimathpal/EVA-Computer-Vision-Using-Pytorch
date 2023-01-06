@@ -17,5 +17,5 @@ This way we will get the ***ground truth for training a regressor along with a c
 
 1. Random number is generated using python's random module using random.randint
 2. After that a target column is created by adding image label from Mnist dataset and the generated random number
-3. ```__getitem__``` returns a dictionary of image and all the associated labels.This dictionary has image, numeric data which is a list of image label and random integer and 
-        target which is also a dictionary with image label and sum of the image label and random integer
+3. ```__getitem__``` returns a dictionary of image and all the associated labels.This dictionary has image, numeric data which is a list of image label and random integer and target which is also a dictionary with image label and sum of the image label and random integer
+![alt text](https://github.com/minakshimathpal/EVA-Computer-Vision-Using-Pytorch/blob/main/artifacts/data_representation.PNG?raw=true)
