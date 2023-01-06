@@ -19,3 +19,25 @@ This way we will get the ***ground truth for training a regressor along with a c
 2. After that a target column is created by adding image label from Mnist dataset and the generated random number
 3. ```__getitem__``` returns a dictionary of image and all the associated labels.This dictionary has image, numeric data which is a list of image label and random integer and target which is also a dictionary with image label and sum of the image label and random integer
 ![alt text](https://github.com/minakshimathpal/EVA-Computer-Vision-Using-Pytorch/blob/main/artifacts/data_representation.PNG?raw=true)
+![alt text](https://github.com/minakshimathpal/EVA-Computer-Vision-Using-Pytorch/blob/main/artifacts/target_column.PNG?raw=true)
+
+### Model Architecture
+We need one convolutional neural network for our image data and a multi-layer perceptron for our tabular data. Both need to be combined and need to return a single prediction value. First, we define a single conv_block, a small custom CNN-layer that expects an input and output dimension. This will save us a bit of repetitive code writing later on.
+![alt text](https://github.com/minakshimathpal/EVA-Computer-Vision-Using-Pytorch/blob/main/artifacts/Model_architecture.PNG?raw=true)
+
+### Loss Function
+We create a flexible training routine that takes into account all outputs of our model. Therefore, it does not matter whether we have 2, 3 or, for example, 5 classifier heads. We simply use the conventional loss function for multiclassification tasks. We calculate the CrossEntropyLoss for digit classifier and for regression we need MSE and then we sum the Losses. This way we can optimize the weights with a single optimizer step for both the heads
+
+![alt text](https://github.com/minakshimathpal/EVA-Computer-Vision-Using-Pytorch/blob/main/artifacts/loss_function.PNG?raw=true)
+
+### Training Logs
+
+![alt text](https://github.com/minakshimathpal/EVA-Computer-Vision-Using-Pytorch/blob/main/artifacts/training_logs.PNG?raw=true)
+
+### Evaluation
+Accuracy and R2 value is used to evaluate the performance of the model
+![alt text](https://github.com/minakshimathpal/EVA-Computer-Vision-Using-Pytorch/blob/main/artifacts/Evaluation.PNG?raw=true)
+
+![alt text](https://github.com/minakshimathpal/EVA-Computer-Vision-Using-Pytorch/blob/main/artifacts/confusion_matrix.PNG?raw=true)
+
+
