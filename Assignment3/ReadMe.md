@@ -60,6 +60,6 @@ There are total ```19,236``` trainable parameters.
 ![alt text](https://github.com/minakshimathpal/EVA-Computer-Vision-Using-Pytorch/blob/master/Assignment3/artifacts/training_logs.PNG)
 
 ## Accuracy and Loss Plots
-![alt text](https://github.com/minakshimathpal/EVA-Computer-Vision-Using-Pytorch/blob/master/Assignment3/artifacts/Accuracy_plots.PNG?raw=true)
+![alt text](https://github.com/minakshimathpal/EVA-Computer-Vision-Using-Pytorch/blob/master/Assignment3/artifacts/Accuracy_plot.PNG?raw=true)
 ![alt text](https://github.com/minakshimathpal/EVA-Computer-Vision-Using-Pytorch/blob/master/Assignment3/artifacts/Loss_plot.PNG?raw=true)
 
