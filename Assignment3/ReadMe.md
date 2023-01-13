@@ -26,7 +26,27 @@ Our network architecture will contain a combination of different layers, namely:
     View
     Linear layer
     
-##     
+## Feature Extractor & Classifier Combo
+
+Many classical convolutional neural networks are actually a combination of convnets and MLPs. Looking at the architectures of LeNet and AlexNet for instance, one can distinctively see that their architectures are just a couple of convolution layers with linear layers attached at the end.
+
+This configuration makes a lot of sense, it allowed the convolution layers to do what they do best which is extracting features in data with two spatial dimensions. Afterwards the extracted features are passed onto linear layers so they also can do what they are great at, finding relationships between feature vectors and targets.
+
+![alt text](https://github.com/minakshimathpal/EVA-Computer-Vision-Using-Pytorch/blob/master/Assignment3/artifacts/Alexnet_architecture.PNG?raw=true)
+
+## A Flaw in the Design
+
+The problem with this design is that linear layers have a very high propensity to overfit to data. Dropout regularization was introduced to help mitigate this problem but a problem it remained nonetheless. Furthermore, for a neural network which prides itself on not destroying spatial structures, the classical convnet still did it anyway, albeit deeper into the network and to a lesser degree.
+
+## Modern Solutions to a Classical Problem
+
+In order to prevent this overfitting issue in convnets, the logical next step after trying dropout regularization was to completely get rid of the linear layers all together. If the linear layers are to be excluded, an entirely new way of down-sampling feature maps and producing a vector representation of equal size to the number of classes in question is to be sought. This exactly is where global pooling comes in.
+
+## Global Average Pooling
+
+Still on the same classification task described above, imagine a scenario where we feel our convolution layers are at an adequate depth but we have 8 feature maps of size (3, 3). We can utilize a 1 x 1 convolution layer in order to down-sample the 8 feature maps to 4. Now we have 4 matrices of size (3, 3) when what we actually need is a vector of 4 elements.
+
+One way to derive a 4 element vector from these feature maps is to compute the average of all pixels in each feature map and return that as a single element. This is essentially what global average pooling entails.
     
 
 
