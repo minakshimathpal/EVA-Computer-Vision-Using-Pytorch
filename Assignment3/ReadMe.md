@@ -23,8 +23,8 @@ Our network architecture will contain a combination of different layers, namely:
     Conv2d
     MaxPool2d
     Rectified linear unit (ReLU)
-    View
-    Linear layer
+    BatchNormalization Layer
+    Dropout2d
     
 ## Feature Extractor & Classifier Combo
 
