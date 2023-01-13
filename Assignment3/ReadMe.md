@@ -57,7 +57,7 @@ One way to derive a 4 element vector from these feature maps is to compute the a
 There are total ```19,236``` trainable parameters. 
 
 ## Training logs
-![alt text](https://github.com/minakshimathpal/EVA-Computer-Vision-Using-Pytorch/blob/master/Assignment3/artifacts/training_logs.PNG)?raw=true)
+![alt text](https://github.com/minakshimathpal/EVA-Computer-Vision-Using-Pytorch/blob/master/Assignment3/artifacts/training_logs.PNG)
 
 ## Accuracy and Loss Plots
 ![alt text](https://github.com/minakshimathpal/EVA-Computer-Vision-Using-Pytorch/blob/master/Assignment3/artifacts/Accuracy_plots.PNG?raw=true)
