@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ## Part1: BackPropogation using Excel
 ### 1.1 Network Architecture
 The document captures the experience of creating a backpropogation using an excel sheet. The Neural network looks like the below. Our Network excepts two inputs,has a hidden layer and an output layer. The sigmoid function has been used as an Activation Function.
