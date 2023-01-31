@@ -22,6 +22,14 @@ Your 5th Assignment is:
             add all your graphs
             your 3 collection-of-misclassified-images 
  - Upload your complete assignment on GitHub and share the link on LMS
+ 
+ ### Strategy Details
+ The objective of this assignment is to get well versed with three types of Normalization.
+ - Batch Normalization(with L1 regularization)
+ - Layer Normalization
+ - Group normalization
+ ### Normalization
+ Normalization is a kind of preprocessing strategy used in Machine Learning and Deep Learning where the weights/parameters of the model/network are scaled to be in a range of 0-1.Normalizing our inputs aims to create a set of features that are on the same scale as each other.For machine learning models, our goal is usually to recenter and rescale our data such that is between 0 and 1 or -1 and 1, depending on the data itself.Normalization can help training of our neural networks as the different features are on a similar scale, which helps to stabilize the gradient descent step, allowing us to use larger learning rates or help models converge faster for a given learning rate.
 
  
 
